@@ -1,25 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { All } from './pages/All'
+import { Regular } from './pages/Regular'
+import { Hot } from './pages/Hot'
+import { Header } from './componenents/Header'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const mems = [
+    {
+      id: 0,
+      title: 'Mem 1',
+      upvotes: 6,
+      downvotes: 0,
+      img: '16966728152932.jpg',
+    },
+    {
+      id: 1,
+      title: 'Mem 2',
+      upvotes: 1,
+      downvotes: 2,
+      img: '16995155020280.jpg',
+    },
+  ]
+
+	return (
+		<BrowserRouter>
+			<div className='App'>
+				<Header />
+				<Routes>
+					<Route path='/' element={<All mems={mems}/>} />
+					<Route path='/regular' element={<Regular mems={mems}/>} />
+					<Route path='/hot' element={<Hot mems={mems}/>} />
+				</Routes>
+			</div>
+		</BrowserRouter>
+	)
 }
 
-export default App;
+export default App
