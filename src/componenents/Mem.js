@@ -1,3 +1,6 @@
+import SouthIcon from '@mui/icons-material/South';
+import NorthIcon from '@mui/icons-material/North';
+
 export function Mem(props) {
 
     const mems = props.mems
@@ -8,8 +11,8 @@ export function Mem(props) {
 				<div key={mem.id}>
 					<h2>{mem.title}</h2>
 					<img src={`assets/mems/${mem.img}`} alt={mem.title} />
-                    <p>Łapka w góre: <span>{mem.upvotes}</span></p>
-                    <p>Łapka w dół: <span>{mem.downvotes}</span></p>
+                    <p><span>{mem.upvotes}</span><NorthIcon />
+                    <span>{mem.downvotes}</span><SouthIcon /></p>
 				</div>
 			))}
 		</section>
