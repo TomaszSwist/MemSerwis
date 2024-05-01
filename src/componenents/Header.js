@@ -1,20 +1,14 @@
-import { Link } from 'react-router-dom'
+import { Button, ButtonGroup } from '@mui/material'
 
 export function Header() {
 	return (
 		<>
 			<h1>MemSerwis</h1>
-			<ul>
-				<li>
-					<Link to='/'>Strona główna</Link>
-				</li>
-				<li>
-					<Link to='/regular'>Regular</Link>
-				</li>
-				<li>
-					<Link to='/hot'>Gorące</Link>
-				</li>
-			</ul>
+			<ButtonGroup variant='contained' aria-label='Basic button group'>
+				<Button href='/'>Strona główna</Button>
+				<Button href='/regular'>Regular</Button>
+				<Button href='/hot'>Gorące</Button>
+			</ButtonGroup>
 		</>
 	)
 }
