@@ -1,0 +1,38 @@
+.navTitle {
+	margin: 0;
+	padding: 0;
+	font-size: 3rem;
+	color: #fff;
+	text-decoration: none;
+}
+
+.navbar {
+	position: sticky;
+	top: 0;
+	background-color: #121212;
+	width: 100%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	border-bottom: solid #fff 2px;
+}
+
+.navbar a {
+	color: #fff;
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+.navbar a:hover {
+	color: #000;
+	background-color: #dfded6;
+	cursor: pointer;
+}
+
+.navbar a.active {
+	background-color: #fff;
+	color: #000;
+	display: block;
+	padding: 8px 16px;
+	text-decoration: none;
+}

@@ -1,11 +1,13 @@
+import { useSelector } from "react-redux";
 import { Mem } from "../componenents/Mem";
 
-export function All(props) {
+export function All() {
+	const mems = useSelector(store => store.mems) 
 
 	return (
 		<section>
-			<h1>All</h1>
-			<Mem mems={props.mems}/>
+			<h1>Wszytkie</h1>
+			<Mem mems={mems}/>
 		</section>
 	)
 }
