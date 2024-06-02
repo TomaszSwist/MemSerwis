@@ -14,6 +14,7 @@ export function Header() {
 					<NavLink to='/'>Wszytkie</NavLink>
 					<NavLink to='/regular'>Regular</NavLink>
 					<NavLink to='/hot'>Hot</NavLink>
+					<NavLink to='/add'>Dodaj</NavLink>
 				</ButtonGroup>
 			</div>
 		</>
