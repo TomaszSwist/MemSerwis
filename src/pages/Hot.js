@@ -7,7 +7,6 @@ const mems = useSelector(store => store.mems.filter(mem => (mem.upvotes - mem.do
 
 	return (
 		<section>
-			<h1>Gorące</h1>
 			<Mem mems={mems}/>
 		</section>
 	)

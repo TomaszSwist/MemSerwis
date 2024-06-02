@@ -1,19 +1,15 @@
 import { useSelector } from 'react-redux'
+import { Typography }from "@mui/material";
 
 export function ErrorPage() {
 	const mems = useSelector(store => store.mems)
 	const max = mems.reduce((prev, current) => (prev && prev.upvotes > current.upvotes ? prev : current))
 
-	console.log(mems)
-	console.log(max)
-
 	return (
 		<section>
-			<h1>Kto kazał ci tu wejść?</h1>
-			<div>
-				<h2>Nasz najlepiej oceniony mem:</h2>
+			<Typography variant='h2' align='center' gutterBottom>Kto kazał ci tu wejść?</Typography>
+			<Typography variant='h4' align='center'>Nasz najlepiej oceniony mem:</Typography>
 				<img src={`/assets/mems/${max.img}`} alt={max.title} />
-			</div>
 		</section>
 	)
 }

@@ -1,4 +1,4 @@
-.navTitle {
+.header__nav-title {
 	margin: 0;
 	padding: 0;
 	font-size: 3rem;
@@ -6,9 +6,10 @@
 	text-decoration: none;
 }
 
-.navbar {
+.header__nav-bar {
 	position: sticky;
 	top: 0;
+	margin-bottom: 2.5rem;
 	background-color: #121212;
 	width: 100%;
 	display: flex;
@@ -17,19 +18,19 @@
 	border-bottom: solid #fff 2px;
 }
 
-.navbar a {
+.header__nav-bar a {
 	color: #fff;
 	display: block;
 	padding: 8px 16px;
 	text-decoration: none;
 }
-.navbar a:hover {
+.header__nav-bar a:hover {
 	color: #000;
 	background-color: #dfded6;
 	cursor: pointer;
 }
 
-.navbar a.active {
+.header__nav-bar a.active {
 	background-color: #fff;
 	color: #000;
 	display: block;

@@ -1,14 +1,15 @@
 import './Header.css'
 import { NavLink } from 'react-router-dom'
-import { Button, ButtonGroup } from '@mui/material'
+import { ButtonGroup } from '@mui/material'
+import Typography from "@mui/material/Typography";
 
 export function Header() {
 	return (
 		<>
-			<NavLink className='navTitle' to='/'>
-				<h1 className='title'>MemSerwis</h1>
+			<NavLink className='header__nav-title' to='/'>
+			<Typography variant='h1' gutterBottom>MemSerwis</Typography>
 			</NavLink>
-			<div className='navbar'>
+			<div className='header__nav-bar'>
 				<ButtonGroup>
 					<NavLink to='/'>Wszytkie</NavLink>
 					<NavLink to='/regular'>Regular</NavLink>

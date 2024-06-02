@@ -6,7 +6,6 @@ export function All() {
 
 	return (
 		<section>
-			<h1>Wszytkie</h1>
 			<Mem mems={mems}/>
 		</section>
 	)
