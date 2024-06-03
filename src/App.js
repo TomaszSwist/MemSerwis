@@ -4,7 +4,6 @@ import '@fontsource/roboto/400.css'
 import '@fontsource/roboto/500.css'
 import '@fontsource/roboto/700.css'
 import { All } from './pages/All'
-import { Add } from './pages/Add'
 import { Regular } from './pages/Regular'
 import { Hot } from './pages/Hot'
 import { ErrorPage } from './pages/ErrorPage'
@@ -20,7 +19,6 @@ function App() {
 					<Route path='/' element={<All />} />
 					<Route path='/regular' element={<Regular />} />
 					<Route path='/hot' element={<Hot />} />
-					<Route path='/add' element={<Add />} />
 					<Route path='*' element={<ErrorPage />} />
 				</Routes>
 			</div>

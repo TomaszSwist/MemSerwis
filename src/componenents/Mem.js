@@ -33,7 +33,7 @@ export function Mem(props) {
 					<img className='mem__card-img' src={`/assets/mems/${mem.img}`} alt={mem.title} />
 					
 					<Box sx={{ p: 2 }}>
-						<Typography gutterBottom variant='h3'>
+						<Typography gutterBottom variantMapping={{h4: 'h3'}} variant='h4'>
 							{mem.title}
 						</Typography>
 
