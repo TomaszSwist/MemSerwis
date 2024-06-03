@@ -1,8 +1,8 @@
-# Getting Started with Create React App
+# Project created with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to run project
 
 In the project directory, you can run:
 
@@ -29,42 +29,76 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
+## Learn More about Create React App
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Features and Purpose
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project uses the React, Redux, MUI libraries. The site allows you to display and aggregate funny (or not) images called "memes" based on their scores. When the result changes, the app updates the list of images in live (depending on which page the user is on)
 
-### Analyzing the Bundle Size
+## Score
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+The result is calculated based on votes. You can vote up and down. The calculation is done by subtraction. The number of upvotes is subtracted from the downvotes.
 
-### Making a Progressive Web App
+## Store
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+State is menaged by Redux and "globalStore".
 
-### Advanced Configuration
+## Styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Most of the styliong is provided by MUI library and some custom CSS (e.g. navigation)
 
-### Deployment
+## Pages
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### All (Wszystkie)
 
-### `npm run build` fails to minify
+This page shows all pictures. Dosen't matter what how high or low they are scored.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Regular
+
+This page shows pictures that are rated 5 and lower.
+
+## Components
+
+### Header
+
+Upper part of the view
+
+#### Navigation
+
+Navigation is managed by BrowserRouter and NavLink from 'react-router-dom'. Using NavLink allows to switch views (Wszystkie, Regular, Hot) without reloading whole aplication. 
+
+*Colors in the navigation indicates what page you are currently see (custom CSS).
+*Navigation have sticy position to improve user expierience. The user always knows/see what page he is on.
+
+### Title
+
+Simple text with title of the aplication. Typography form MUI is used to menage styling (Card, Box, Stack, Typography, Button)
+
+### Mem
+
+Main section of the site. 
+
+#### Picture
+
+Main purpose of the site. Show picture/image. Simple "img" tag.
+
+#### Voting
+
+Two buttons with icons. Arrow "up" to upvote and arrow "down" to downwote.
+Buttons trigger a state change (managed by Redux in globalReducer)
+
+#### Favorite
+
+One button with star. User can mark image as favourite by clicking on this button. Button changes its filling. 
+
+# Area for improvement 
+
+* Test
+
+
+# Planned development of the application
