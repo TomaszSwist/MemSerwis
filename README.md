@@ -1,12 +1,15 @@
 # MemSerwis
 
-## Create React App
+This project was bootstrapped with [Create React App]
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Running application
+
+You can view the application using GitHub Pages
+"https://tomaszswist.github.io/MemSerwis/"
 
 ## How to run project
 
-In the project directory, you can run:
+App require [nodejs](https://nodejs.org/). Downolad the project. Run console in the project directory. Run 'npm install' to install dependencies.
 
 ### `npm start`
 
@@ -15,11 +18,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
 
@@ -100,7 +98,11 @@ One button with star. User can mark image as favourite by clicking on this butto
 
 # Area for improvement 
 
-* Test
-
+* Working of the "Error Page" on the GitHub Page
+* Implementation of the newer liblary than Redux
+* 
 
 # Planned development of the application
+
+* Improve Styling
+* Adding a page that allows user to add a new image 
