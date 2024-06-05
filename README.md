@@ -100,7 +100,7 @@ One button with star. User can mark image as favourite by clicking on this butto
 
 * Working of the "Error Page" on the GitHub Page
 * Implementation of the newer liblary than Redux
-* 
+* Improve implementation of the CSS
 
 # Planned development of the application
 
