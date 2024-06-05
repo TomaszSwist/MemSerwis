@@ -1,17 +1,8 @@
 {
   "files": {
     "main.css": "/MemSerwis/static/css/main.850ebbe2.css",
-    "main.js": "/MemSerwis/static/js/main.8bf8c0d7.js",
+    "main.js": "/MemSerwis/static/js/main.0dcdb5a5.js",
     "static/js/453.5c29d93a.chunk.js": "/MemSerwis/static/js/453.5c29d93a.chunk.js",
-    "static/media/17103278502675.jpg": "/MemSerwis/static/media/17103278502675.7c07ac881132e924c253.jpg",
-    "static/media/16999928131995.jpg": "/MemSerwis/static/media/16999928131995.61eaf8831398edc5a121.jpg",
-    "static/media/17099936020616.jpg": "/MemSerwis/static/media/17099936020616.5b820456e140fb29bc6a.jpg",
-    "static/media/17140767186033.jpg": "/MemSerwis/static/media/17140767186033.c974e92ba55fe4744263.jpg",
-    "static/media/16995155020280.jpg": "/MemSerwis/static/media/16995155020280.a0bbf805fdb0cd5c93fb.jpg",
-    "static/media/17035906752380.jpg": "/MemSerwis/static/media/17035906752380.11f40daab7e83191474b.jpg",
-    "static/media/17129450995124.jpg": "/MemSerwis/static/media/17129450995124.fd7837ba74f594942e68.jpg",
-    "static/media/16966728152932.jpg": "/MemSerwis/static/media/16966728152932.80606a40fef5af111270.jpg",
-    "static/media/17084637887994.jpg": "/MemSerwis/static/media/17084637887994.30b5a4370a44574890a8.jpg",
     "static/media/roboto-latin-500-normal.woff2": "/MemSerwis/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
     "static/media/roboto-latin-700-normal.woff2": "/MemSerwis/static/media/roboto-latin-700-normal.227c93190fe7f82de3f8.woff2",
     "static/media/roboto-latin-400-normal.woff2": "/MemSerwis/static/media/roboto-latin-400-normal.b009a76ad6afe4ebd301.woff2",
@@ -70,11 +61,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/MemSerwis/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/MemSerwis/index.html",
     "main.850ebbe2.css.map": "/MemSerwis/static/css/main.850ebbe2.css.map",
-    "main.8bf8c0d7.js.map": "/MemSerwis/static/js/main.8bf8c0d7.js.map",
+    "main.0dcdb5a5.js.map": "/MemSerwis/static/js/main.0dcdb5a5.js.map",
     "453.5c29d93a.chunk.js.map": "/MemSerwis/static/js/453.5c29d93a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.850ebbe2.css",
-    "static/js/main.8bf8c0d7.js"
+    "static/js/main.0dcdb5a5.js"
   ]
 }
