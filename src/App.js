@@ -16,10 +16,10 @@ function App() {
 			<div className='App'>
 				<Header />
 				<Routes>
-					<Route path='/' element={<All />} />
-					<Route path='/regular' element={<Regular />} />
-					<Route path='/hot' element={<Hot />} />
-					<Route path='*' element={<ErrorPage />} />
+					<Route path='/MemSerwis/' element={<All />} />
+					<Route path='/MemSerwis/regular' element={<Regular />} />
+					<Route path='/MemSerwis/hot' element={<Hot />} />
+					<Route path={'/MemSerwis/*'} element={<ErrorPage />} />
 				</Routes>
 			</div>
 		</BrowserRouter>

@@ -30,7 +30,7 @@ export function Mem(props) {
 		<>
 			{mems.map(mem => (
 				<Card sx={{ mb: 5, maxWidth: 720 }} key={mem.id}>
-					<img className='mem__card-img' src={require(`/public/assets/mems/${mem.img}`)} alt={mem.title} />
+					<img className='mem__card-img' src={`assets/mems/${mem.img}`} alt={mem.title} />
 					
 					<Box sx={{ p: 2 }}>
 						<Typography gutterBottom variantMapping={{h4: 'h3'}} variant='h4'>

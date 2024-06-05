@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography'
 export function Header() {
 	return (
 		<>
-			<NavLink className='header__nav-title' to='/'>
+			<NavLink className='header__nav-title' to='/MemSerwis/'>
 				<Typography variantMapping={{h2: 'h1'}} variant='h2' gutterBottom>
 					MemSerwis
 				</Typography>
@@ -14,9 +14,9 @@ export function Header() {
 
 			<div className='header__nav-bar'>
 				<ButtonGroup>
-					<NavLink to='/'>Wszytkie</NavLink>
-					<NavLink to='/regular'>Regular</NavLink>
-					<NavLink to='/hot'>Hot</NavLink>
+					<NavLink to='/MemSerwis/'>Wszytkie</NavLink>
+					<NavLink to='/MemSerwis/regular'>Regular</NavLink>
+					<NavLink to='/MemSerwis/hot'>Hot</NavLink>
 				</ButtonGroup>
 			</div>
 		</>
