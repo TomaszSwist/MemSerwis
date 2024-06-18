@@ -6,6 +6,7 @@ import '@fontsource/roboto/700.css'
 import { All } from './pages/All'
 import { Regular } from './pages/Regular'
 import { Hot } from './pages/Hot'
+import { Favorite } from './pages/Favorite'
 import { ErrorPage } from './pages/ErrorPage'
 import { Header } from './componenents/Header'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -19,6 +20,7 @@ function App() {
 					<Route path='/MemSerwis/' element={<All />} />
 					<Route path='/MemSerwis/regular' element={<Regular />} />
 					<Route path='/MemSerwis/hot' element={<Hot />} />
+					<Route path='/MemSerwis/favorite' element={<Favorite />} />
 					<Route path={'/MemSerwis/*'} element={<ErrorPage />} />
 				</Routes>
 			</div>

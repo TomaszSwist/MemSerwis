@@ -78,13 +78,24 @@ const initState = {
 export const memsReducer = (state = initState, action) => {
 	switch (action.type) {
 		case 'UPVOTE': {
-			return { ...state, mems: state.mems.map(mem => mem.id === action.payload ? {...mem, upvotes: mem.upvotes + 1} : mem)}
+			return {
+				...state,
+				mems: state.mems.map(mem => (mem.id === action.payload ? { ...mem, upvotes: mem.upvotes + 1 } : mem)),
+			}
 		}
 		case 'DOWNVOTE': {
-			return { ...state, mems: state.mems.map(mem => mem.id === action.payload ? {...mem, downvotes: mem.downvotes + 1} : mem)}
+			return {
+				...state,
+				mems: state.mems.map(mem => (mem.id === action.payload ? { ...mem, downvotes: mem.downvotes + 1 } : mem)),
+			}
 		}
 		case 'RATE': {
-			return { ...state, mems: state.mems.map(mem => mem.id === action.payload ? {...mem, rate: mem.rate === true ? false : true} : mem)}
+			return {
+				...state,
+				mems: state.mems.map(mem =>
+					mem.id === action.payload ? { ...mem, rate: mem.rate === true ? false : true } : mem
+				),
+			}
 		}
 
 		default:

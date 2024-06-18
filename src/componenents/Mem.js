@@ -13,15 +13,12 @@ import { useDispatch } from 'react-redux'
 export function Mem(props) {
 	const mems = props.mems
 	const dispatchEvent = useDispatch()
-
 	const onUpvote = id => {
 		dispatchEvent({ type: 'UPVOTE', payload: id })
 	}
-
 	const onDownvote = id => {
 		dispatchEvent({ type: 'DOWNVOTE', payload: id })
 	}
-
 	const onRate = id => {
 		dispatchEvent({ type: 'RATE', payload: id })
 	}
@@ -31,12 +28,10 @@ export function Mem(props) {
 			{mems.map(mem => (
 				<Card sx={{ mb: 5, maxWidth: 720 }} key={mem.id}>
 					<img className='mem__card-img' src={`assets/mems/${mem.img}`} alt={mem.title} />
-					
 					<Box sx={{ p: 2 }}>
-						<Typography gutterBottom variantMapping={{h4: 'h3'}} variant='h4'>
+						<Typography gutterBottom variantMapping={{ h4: 'h3' }} variant='h4'>
 							{mem.title}
 						</Typography>
-
 						<Stack direction='row' justifyContent='space-between' alignItems='center'>
 							<div>
 								<Button onClick={() => onUpvote(mem.id)} variant='outlined' endIcon={<NorthIcon />}>
@@ -46,7 +41,6 @@ export function Mem(props) {
 									{mem.downvotes}
 								</Button>
 							</div>
-
 							<Button onClick={() => onRate(mem.id)} variant='outlined'>
 								{mem.rate === true ? <StarIcon /> : <StarBorderIcon />}
 							</Button>

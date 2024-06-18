@@ -1,18 +1,24 @@
-.header__nav-title {
-	margin: 0;
-	padding: 0;
+.header__nav {
+	width: 100%;
+	margin-bottom: 2.5rem;
+	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+}
+
+.header__title {
+	padding-top: 10px;
 	color: #fff;
 	text-decoration: none;
 }
 
 .header__nav-bar {
-	position: sticky;
 	top: 0;
 	z-index: 1;
-	margin-bottom: 2.5rem;
-	background-color: #121212;
 	width: 100%;
 	display: flex;
+	background-color: #121212;
 	align-content: center;
 	justify-content: center;
 	border-bottom: solid #fff 2px;
@@ -24,6 +30,7 @@
 	padding: 8px 16px;
 	text-decoration: none;
 }
+
 .header__nav-bar a:hover {
 	color: #000;
 	background-color: #dfded6;
