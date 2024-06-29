@@ -21,7 +21,7 @@ function App() {
 					<Route path='/MemSerwis/regular' element={<Regular />} />
 					<Route path='/MemSerwis/hot' element={<Hot />} />
 					<Route path='/MemSerwis/favorite' element={<Favorite />} />
-					<Route path={'/MemSerwis/*'} element={<ErrorPage />} />
+					<Route path='/MemSerwis/*' element={<ErrorPage />} />
 				</Routes>
 			</div>
 		</BrowserRouter>
